@@ -427,21 +427,6 @@ all-test:
 	    echo "      ***"; \
 	    exit 1; \
 	fi
-	@if ! type dc >/dev/null 2>&1; then \
-	    echo "      ***"; \
-	    echo "      *** Error: dc is not installed!"; \
-	    echo "      ***"; \
-	    echo "      *** Install dc package"; \
-	    echo "      *** for Ubuntu: sudo apt-get install dc"; \
-	    echo "      ***"; \
-	    exit 1; \
-	fi
-	@if ! dc -V >/dev/null 2>&1; then \
-	    echo "      ***"; \
-	    echo "      *** Error: must install GNU dc with the -e option!"; \
-	    echo "      ***"; \
-	    exit 1; \
-	fi
 ifeq ($(UNAME),Darwin)
 	@if ! type gsed >/dev/null 2>&1; then \
 	    echo "      ***"; \
