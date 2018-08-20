@@ -659,11 +659,11 @@ install-test:
 	    : ; \
 	elif ! type foomatic-rip >/dev/null 2>&1; then \
 	    echo "      ***"; \
-	    echo "      *** Error: foomatic-rip is not installed!"; \
+	    echo "      *** Warning: foomatic-rip is not installed!"; \
 	    echo "      ***"; \
 	    echo "      *** Install foomatic package(s) for your OS"; \
 	    echo "      ***"; \
-	    exit 1; \
+		: ; \
 	fi
 	# ... OK!
 	#
